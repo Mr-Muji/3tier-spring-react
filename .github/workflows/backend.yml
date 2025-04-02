@@ -30,7 +30,10 @@ jobs:
     
     # 백엔드 빌드
     - name: Build Backend
-      run: ./mvnw compile
+      run: |
+        chmod +x ./backend/mvnw
+        cd backend
+        ./mvnw compile
     
     # 백엔드 테스트 실행
     - name: Test Backend
