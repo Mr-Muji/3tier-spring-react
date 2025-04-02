@@ -30,18 +30,18 @@ jobs:
     
     # 백엔드 빌드
     - name: Build Backend
-      run: |
-        chmod +x ./backend/mvnw
-        cd backend
-        ./mvnw compile
+      working-directory: ./backend  # 이 스텝은 backend 디렉토리에서 실행
+      run: mvn compile  # 직접 mvn 명령어 사용
     
     # 백엔드 테스트 실행
     - name: Test Backend
-      run: ./mvnw test
+      working-directory: ./backend  # 이 스텝은 backend 디렉토리에서 실행
+      run: mvn test
     
     # 백엔드 패키지 생성 (JAR 파일)
     - name: Package Backend
-      run: ./mvnw package -Dmaven.test.skip
+      working-directory: ./backend  # 이 스텝은 backend 디렉토리에서 실행
+      run: mvn package -Dmaven.test.skip
     
     # Docker 빌드 환경 설정
     - name: Set up Docker Buildx
