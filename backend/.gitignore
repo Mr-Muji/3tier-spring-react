@@ -1,0 +1,26 @@
+# 빌드 산출물 디렉토리
+target/
+
+# Maven Wrapper
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDEA / Eclipse / NetBeans 등 IDE 설정 파일
+*.iml
+*.ipr
+*.iws
+.idea/
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+
+# Gradle(사용하지 않아도 혹시 대비)
+.gradle/
+build/
+
+# OS별 잡다한 파일들
+.DS_Store
+Thumbs.db 

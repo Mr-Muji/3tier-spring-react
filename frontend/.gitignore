@@ -1,0 +1,17 @@
+# node_modules : npm install 시 생성되는 의존성 폴더
+node_modules/
+
+# 빌드 산출물
+build/
+dist/
+
+# Webpack 출력 디렉토리 (예: static/built)
+src/main/resources/static/built/
+
+# Yarn Lock 파일 (npm을 사용한다면)
+yarn.lock
+
+# 임시 or 캐시성 파일들
+.npm/
+.npm-debug.log*
+.DS_Store 
