@@ -1,4 +1,4 @@
-# 프론트엔드 CI/CD 파이프라인 워크플로우  
+# 프론트엔드 CI/CD 파이프라인 워크플로우
 name: Frontend CI/CD Pipeline
 
 on:
